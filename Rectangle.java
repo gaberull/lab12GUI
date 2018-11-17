@@ -4,9 +4,9 @@ import java.awt.Point;
 /**
  * This class maintains information for drawing a Rectangle and extends Polygon.
  * 
- * @author Stephen
- * @version 2018-04-02
- * Lab 11
+ * @author Gabe Scott
+ * @version 2018-11-17
+ * Lab 12
  */
 public class Rectangle extends Polygon
 {
@@ -23,5 +23,19 @@ public class Rectangle extends Polygon
     public Rectangle(Point center, int width, int height, Color color, boolean filled)
     {
         // TODO: implement this.
+        super(color, filled);
+        
+        location = new Point[4];
+        int x1 = center.x - width;
+        int y1 = center.y - (height / 2);
+        int x2 = center.x + (width / 2);
+        int y2 = center.y + (height / 2);
+        
+        // bottom left
+        location[0] = new Point(center.x - width / 2, center.y - height/2);
+        //
+        location[1] = new Point(center.x + width, center.y - width);
+        location[2] = new Point(center.x + width, center.y + width);
+        location[3] = new Point(center.x - width, center.y + width);
     }
 }
