@@ -8,7 +8,7 @@ import javax.swing.JFrame;
  * This class extends JFrame and contains the main entry point for the program.
  * 
  * @author CS2334. Modified by: Gabe Scott
- * @version 2018-11-16
+ * @version 2018-11-17
  * Lab 12
  */
 public class DrawFrame extends JFrame
@@ -40,6 +40,7 @@ public class DrawFrame extends JFrame
         
         // Ears:
         
+        
         // Eyes:
         
         // Nose and Whiskers:
@@ -53,6 +54,8 @@ public class DrawFrame extends JFrame
         
         // TODO: add shapes to the panel:
         drawPanel.addShape(base);
+        //drawPanel.addShape(ear1);
+        //drawPanel.addShape(ear2);
         
         // set background color
         drawPanel.setBackground(Color.YELLOW);

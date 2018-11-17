@@ -5,8 +5,8 @@ import java.awt.Point;
  * This class maintains information for drawing a Diamond and extends Polygon.
  * 
  * @author Stephen
- * @version 2018-04-02
- * Lab 11
+ * @version 2018-11-17
+ * Lab 12
  */
 public class Diamond extends Polygon
 {

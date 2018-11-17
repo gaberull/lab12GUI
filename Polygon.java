@@ -5,8 +5,8 @@ import java.awt.Graphics;
  * This class maintains information for drawing a Polygon and extends Shape.
  * 
  * @author Stephen
- * @version 2018-04-02
- * Lab 11
+ * @version 2018-11-17
+ * Lab 12
  */
 public abstract class Polygon extends Shape
 {
