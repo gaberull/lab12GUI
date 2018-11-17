@@ -30,24 +30,9 @@ public class RightTriangle extends Polygon
         
         location = new Point[3];
         location[0] = new Point(pointRightAngle.x, pointRightAngle.y);
+        location[1] = new Point(pointRightAngle.x + base, pointRightAngle.y);
+        location[2] = new Point(pointRightAngle.x, pointRightAngle.y + height);
         
-        if (base > 0)
-        {
-            location[1] = new Point(pointRightAngle.x - base, pointRightAngle.y);
-        }
-        else if (base < 0)
-        {
-            location[1] = new Point(pointRightAngle.x - base, pointRightAngle.y);
-        }
-        
-        if (height > 0)
-        {
-            location[2] = new Point(pointRightAngle.x, pointRightAngle.y - height);
-        }
-        else if (height < 0)
-        {
-            location[2] = new Point(pointRightAngle.x, pointRightAngle.y + height);
-        }
         
     }
 }
