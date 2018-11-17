@@ -5,9 +5,9 @@ import java.awt.Point;
 /**
  * This class maintains information for drawing an Oval, and extends Shape.
  * 
- * @author Stephen
- * @version 2018-04-02
- * Lab 11
+ * @author Gabe Scott
+ * @version 2018-11-16
+ * Lab 12
  */
 public class Oval extends Shape
 {

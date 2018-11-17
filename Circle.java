@@ -4,8 +4,8 @@ import java.awt.Point;
 /**
  * This class maintains information for drawing a Circle and extends Oval.
  * 
- * @author Stephen
- * @version 2018-04-02
+ * @author Gabe Scott
+ * @version 2018-11-16
  * Lab 11
  */
 public class Circle extends Oval

@@ -7,9 +7,9 @@ import javax.swing.JFrame;
 /**
  * This class extends JFrame and contains the main entry point for the program.
  * 
- * @author CS2334. Modified by: Stephen
- * @version 2018-04-02
- * Lab 11
+ * @author CS2334. Modified by: Gabe Scott
+ * @version 2018-11-16
+ * Lab 12
  */
 public class DrawFrame extends JFrame
 {
