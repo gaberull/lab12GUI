@@ -26,16 +26,14 @@ public class Rectangle extends Polygon
         super(color, filled);
         
         location = new Point[4];
-        int x1 = center.x - width;
-        int y1 = center.y - (height / 2);
-        int x2 = center.x + (width / 2);
-        int y2 = center.y + (height / 2);
         
+        // top left
+        location[0] = new Point(center.x - width / 2, center.y + height / 2);
+        // top right
+        location[1] = new Point(center.x + width / 2, center.y + width / 2);
+        // bottom right
+        location[2] = new Point(center.x + width / 2, center.y - width / 2);
         // bottom left
-        location[0] = new Point(center.x - width / 2, center.y - height/2);
-        //
-        location[1] = new Point(center.x + width, center.y - width);
-        location[2] = new Point(center.x + width, center.y + width);
-        location[3] = new Point(center.x - width, center.y + width);
+        location[3] = new Point(center.x - width / 2, center.y - width / 2);
     }
 }
