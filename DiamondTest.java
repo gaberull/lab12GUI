@@ -9,7 +9,7 @@ import org.junit.Test;
  * 
  * @author Stephen
  * @version 2018-04-02
- * Lab 11
+ * Lab 12
  */
 public class DiamondTest
 {
