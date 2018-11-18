@@ -56,9 +56,17 @@ public class DrawFrame extends JFrame
         // Nose and Whiskers:
         Circle nose = new Circle(new Point(400,300), 35, Color.BLUE, true);
         PolyLine leftWhisker = new PolyLine(new Point(330, 375), new Point(400, 400), 45, Color.BLACK, true);
-        //PolyLine rightWhisker = new PolyLine(new Point(470, 375))
+        PolyLine rightWhisker = new PolyLine(new Point(400, 400), new Point(470, 375), 45, Color.BLACK, true);
+        
+        //Tongue:
+        
+        Oval tongue = new Oval(new Point(435, 435), 45, 77, Color.RED, true);
         
         // Collar:
+        Oval collar = new Oval(new Point(400, 500), 400, 44, Color.BLUE, true);
+        Circle collarBuckle = new Circle(new Point(400, 500), 75, Color.RED, true);
+        Circle collarHighlight = new Circle(new Point(400, 500), 60, Color.GREEN, false);
+        
         
         
         // Square around the dog:
@@ -79,6 +87,11 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(inEyeRight);
         drawPanel.addShape(nose);
         drawPanel.addShape(leftWhisker);
+        drawPanel.addShape(rightWhisker);
+        drawPanel.addShape(tongue);
+        drawPanel.addShape(collar);
+        drawPanel.addShape(collarBuckle);
+        drawPanel.addShape(collarHighlight);
         
         
         
