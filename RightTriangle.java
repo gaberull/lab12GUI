@@ -29,7 +29,7 @@ public class RightTriangle extends Polygon
         super(color, filled);
         
         location = new Point[3];
-        location[0] = new Point(pointRightAngle.x, pointRightAngle.y);
+        location[0] = pointRightAngle;
         location[1] = new Point(pointRightAngle.x + base, pointRightAngle.y);
         location[2] = new Point(pointRightAngle.x, pointRightAngle.y + height);
         

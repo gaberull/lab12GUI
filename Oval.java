@@ -80,7 +80,7 @@ public class Oval extends Shape
         
         // TODO: define how to draw an oval. Remember that the point stored is the center point.
         int topLeftX = location[0].x - diameter1 / 2;
-        int topLeftY = location[0].y + diameter2 / 2;
+        int topLeftY = location[0].y - diameter2 / 2;
         
         if (this.isFilled())
         {

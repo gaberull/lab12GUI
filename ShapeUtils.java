@@ -7,7 +7,7 @@ import java.awt.Point;
  * 
  * @author CS2334
  * @version October 26, 2017
- * Lab 10
+ * Lab 12
  */
 public class ShapeUtils
 {

@@ -39,23 +39,50 @@ public class DrawFrame extends JFrame
         Circle base = new Circle(new Point(400, 300), 400, Color.ORANGE, true);
         
         // Ears:
+        RightTriangle outEarLeft = new RightTriangle(new Point(280,150), 40, -100, Color.GRAY, true);
+        RightTriangle inEarLeft = new RightTriangle(new Point(285,145), 30, -78, Color.PINK, true);
         
+        RightTriangle outEarRight = new RightTriangle(new Point(530,150), -40, -100, Color.GRAY, true);
+        RightTriangle inEarRight = new RightTriangle(new Point(525,145), -30, -78, Color.PINK, true);
         
         // Eyes:
+        Oval outEyeLeft = new Oval(new Point(330, 210), 45, 77, Color.WHITE, true);
+        Oval inEyeLeft = new Oval(new Point(330, 210), 33, 60, Color.BLACK, true);
+        
+        Oval outEyeRight = new Oval(new Point(470, 210), 45, 77, Color.WHITE, true);
+        Oval inEyeRight = new Oval(new Point(470, 210), 33, 60, Color.BLACK, true);
+        
         
         // Nose and Whiskers:
+        Circle nose = new Circle(new Point(400,300), 35, Color.BLUE, true);
+        PolyLine leftWhisker = new PolyLine(new Point(330, 375), new Point(400, 400), 45, Color.BLACK, true);
+        //PolyLine rightWhisker = new PolyLine(new Point(470, 375))
         
         // Collar:
         
+        
         // Square around the dog:
-
+        
+        
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();
         
         // TODO: add shapes to the panel:
         drawPanel.addShape(base);
-        //drawPanel.addShape(ear1);
-        //drawPanel.addShape(ear2);
+        drawPanel.addShape(outEarLeft);
+        drawPanel.addShape(outEarRight);
+        drawPanel.addShape(inEarLeft);
+        drawPanel.addShape(inEarRight);
+        drawPanel.addShape(outEyeLeft);
+        drawPanel.addShape(inEyeLeft);
+        drawPanel.addShape(outEyeRight);
+        drawPanel.addShape(inEyeRight);
+        drawPanel.addShape(nose);
+        drawPanel.addShape(leftWhisker);
+        
+        
+        
+
         
         // set background color
         drawPanel.setBackground(Color.YELLOW);
