@@ -70,6 +70,10 @@ public class DrawFrame extends JFrame
         
         
         // Square around the dog:
+        Square square = new Square(new Point(400, 300), 510, Color.MAGENTA, false);
+        
+        // black circle outline:
+        Circle outline = new Circle(new Point(400, 300), 721, Color.BLACK, false);
         
         
         // initialize the panel and add the shapes to it
@@ -92,6 +96,8 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(collar);
         drawPanel.addShape(collarBuckle);
         drawPanel.addShape(collarHighlight);
+        drawPanel.addShape(square);
+        drawPanel.addShape(outline);
         
         
         
